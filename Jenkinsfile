@@ -10,7 +10,11 @@ pipeline {
 		}
         stage('Checkout'){
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[credentialsId: 'newPipelineI', url: 'https://github.com/asinghgit/hackathon.git']]])
+                checkout([$class: 'GitSCM', 
+			  branches: [[name: 'main']], 
+			  extensions: [], 
+			  userRemoteConfigs: [[credentialsId: 'newPipelineI',
+			  url: 'https://github.com/asinghgit/hackathon.git']]])
 				}
 		}
 	}
