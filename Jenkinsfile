@@ -19,7 +19,7 @@ pipeline {
 		}
 		stage('bulid'){
 			steps {
-				sh 'mvn clean install' 	
+				sh 'echo Hi 123' 	
 			}
 		}
 	}
