@@ -19,7 +19,8 @@ pipeline {
 		}
 		stage('bulid'){
 			steps {
-				bat 'echo Hi 123' 	
+				bat 'echo Hi 123' 
+				bat 'mvn clean install'
 			}
 		}
 	}
