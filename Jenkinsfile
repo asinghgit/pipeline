@@ -16,13 +16,11 @@ pipeline {
 			  userRemoteConfigs: [[credentialsId: 'newPipelineI',
 			  url: 'https://github.com/asinghgit/hackathon.git']]])
 				}
-
+		}
+		stage('bulid'){
+			steps {
+				sh mvn clean install 	
 			}
-	stage('bulid'){
-	    steps {
-			sh mvn clean install 	
-	    }
-
+		}
 	}
-}
 }
