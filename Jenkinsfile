@@ -19,7 +19,7 @@ pipeline {
 		}
 		stage('bulid'){
 			steps {
-				sh 'echo Hi 123' 	
+				bat 'echo Hi 123' 	
 			}
 		}
 	}
