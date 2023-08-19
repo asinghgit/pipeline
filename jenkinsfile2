@@ -1,0 +1,17 @@
+@Library('shared-library@main')
+pipeline {
+    agent any
+    stages {
+        stage("checkout") {
+            steps {
+                echo "hey jenkins"
+            }
+        }
+        stage("check") {
+            steps {
+                echo "hey jenkins"
+                logCheck('warn',1)
+            }
+        }
+    }
+}
