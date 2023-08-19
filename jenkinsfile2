@@ -10,7 +10,7 @@ pipeline {
         stage("check") {
             steps {
                 echo "hey jenkins"
-                logCheck('warn',1)
+                logCheck('not',1)
             }
         }
     }
