@@ -17,7 +17,7 @@ pipeline {
 			  url: 'https://github.com/asinghgit/hackathon.git']]])
 				}
 		}
-		stage('bulid'){
+		stage('bulid the code'){
 			steps {
 				bat 'mvn clean install'
 				bat 'echo Hi 123' 
